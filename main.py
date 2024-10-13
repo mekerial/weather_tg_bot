@@ -55,7 +55,6 @@ def handle_name(message):
     lat = getCords['geo_lat']
     lon = getCords['geo_lon']
 
-
     weather = getWeather(lat, lon)
 
     if weather is None:
