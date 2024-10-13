@@ -62,7 +62,7 @@ def handle_name(message):
         return
 
     bot.send_message(message.chat.id,
-                 f"Погода в городе {name}: {weather['fact']['temp']}°C, влажность: {weather['fact']['humidity']}%, давление: {weather['fact']['pressure_pa']} мм.рт.ст/{weather['fact']['pressure_pa']} Па")
+                 f"Погода в городе {name}: {weather['fact']['temp']}°C, влажность: {weather['fact']['humidity']}%, давление: {weather['fact']['pressure_mm']} мм.рт.ст/{weather['fact']['pressure_pa']} Па")
 
 
 if __name__ == '__main__':
